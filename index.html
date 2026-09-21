@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Games! by Lour</title>
+  </head>
+  <body>
+    <div id = "homepage" class="screen active">
+      <h1> CHOOSE A GAME: </h1>
+      <button onclick="openGTN()"> Guess the number </button>
+      <button onclick="openRPS()"> Rock, Paper, Scissors </button>
+      <button onclick="openPIG()"> Roll a Dice </button>
+    </div>
+    <div id="GTN" class="screen">
+      <button onclick="GTNEasy()"> Easy mode (1-200) </button>
+      <button onclick="GTNMedium()"> Medium Mode (1-500) </button>
+      <button onclick="GTNHard()"> Hard Mode (1-1000) </button>
+      <button onclick="GoBackHPage()" whenhovered="Yes"> Go back </button>
+      <div id="GTNEasy" class="screen">
+        <input type="number" id="GTNEasyinput" min=0 max=200 placeholder="Enter number here">
+        <p id="resulteasy"></p>
+      </div>
+      <div id="GTNMedium" class="screen">
+        <input type="number" id="GTNMediuminput" min=0 max=500 placeholder="Enter number here">
+        <p id="resultmedium"></p>
+      </div>
+      <div id="GTNHard" class="screen">
+        <input type="number" id="GTNHardinput" min=0 max=1000 placeholder="Enter number here">
+        <p id="resulthard"></p>
+      </div>
+    </div>
+  </body>
+  <script src="script.js"></script>
+</html>
