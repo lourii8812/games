@@ -1,1 +1,21 @@
+.screen {
+  display: none;
+}
 
+.screen.active {
+  display: block;
+}
+
+hpbtn { padding: 10px 20px; 
+       font-size: 16px; 
+       cursor: pointer; 
+} 
+
+.hpbtn:hover { 
+  font-size: 0; 
+}
+
+.hpbtn:hover::after { 
+  content: attr(whenhovered); 
+  font-size: 16px; 
+}
